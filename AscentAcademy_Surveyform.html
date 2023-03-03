@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+        
+</head>
+
+<body>
+    <h1> SURVEY FORM</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="name" >
+                Name
+            </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-control">
+            <label for="email" >
+                Email
+            </label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text" id="age" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-control">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Please select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="contact">Contact</label>
+            <input type="text" id="contact" placeholder="Enter your phone number">
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+            </textarea>
+        </div>
+        <button type="button" value="submit"> Submit</button>
+
+    </form>
+    </body>
+
+<script src="survey.js"></script>
+
+</html>
